@@ -9,6 +9,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Navbar from "./navbar"
 
 
 const Layout = ({ children }) => {
@@ -32,6 +33,7 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
+        <Navbar />
         <main>{children}</main>
         <footer
           style={{

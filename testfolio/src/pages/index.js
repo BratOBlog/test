@@ -1,10 +1,10 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Navbar from "../components/navbar"
+
 
 
 const IndexPage = () => (
@@ -12,7 +12,6 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>THIS IS A TESTFOLIO website</b>
       </h1>
-      <Navbar />
   </Layout>
 )
 
