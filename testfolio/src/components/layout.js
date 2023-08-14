@@ -35,12 +35,8 @@ const Layout = ({ children }) => {
       >
         <Navbar />
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
+        <footer className="max-w-screen-xl flex justify-between items-center mx-auto p-4"
+        >   <h2>Hello from Footer</h2>
           © {new Date().getFullYear()} &middot; Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
