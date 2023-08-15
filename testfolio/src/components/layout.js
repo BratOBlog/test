@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Navbar from "./navbar"
+import { StaticImage } from "gatsby-plugin-image"
 
 
 const Layout = ({ children }) => {
@@ -33,9 +34,15 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
-        <Navbar />
-        <main>{children}</main>
-        <footer className="max-w-screen-xl flex justify-between items-center mx-auto p-4"
+        <Navbar className="m-10" />
+        <StaticImage
+          src="../images/back.jpg"
+  alt ="light background"
+  className="w-full bg-center bg-black opacity-90"
+  style={{ maxHeight: "60vh" }}
+        />
+        <main className="max-w-full flex justify-between items-center m-10 p-4">{children}</main>
+        <footer className="max-w-full flex justify-between items-center m-10 p-4"
         >   <h2>Hello from Footer</h2>
           © {new Date().getFullYear()} &middot; Built with
           {` `}
