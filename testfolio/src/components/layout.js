@@ -12,7 +12,6 @@ import Header from "./header"
 import Navbar from "./navbar"
 import { StaticImage } from "gatsby-plugin-image"
 
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -35,16 +34,33 @@ const Layout = ({ children }) => {
         }}
       >
         <Navbar className="m-10" />
-        <StaticImage
-          src="../images/back.jpg"
-  alt ="light background"
-  className="w-full bg-center bg-black opacity-90"
-  style={{ maxHeight: "60vh" }}
-        />
-        <main className="max-w-full flex justify-between items-center m-10 p-4">{children}</main>
-        <footer className="max-w-full flex justify-between items-center m-10 p-4"
-        >   <h2>Hello from Footer</h2>
-          © {new Date().getFullYear()} &middot; Built with
+
+        <div className="relative">
+          <div>
+            <StaticImage
+              src="../images/back.jpg"
+              alt="light background"
+              className="w-full bg-center bg-black opacity-90"
+              style={{ maxHeight: "60vh" }}
+            />
+          </div>
+
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <h1 className="text-white text-4xl font-semibold">TESTFOLIO</h1>
+            <h2 className="text-white text-2xl font-semibold">
+              Welcome to my test portfolio
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div>
+        <main>
+          {children}
+        </main>
+        <footer className="max-w-full flex justify-between items-center m-10 p-4">
+          {" "}
+          <h2>Hello from Footer</h2>© {new Date().getFullYear()} &middot; Built
+          with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>

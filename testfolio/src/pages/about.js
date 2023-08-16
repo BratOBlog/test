@@ -7,7 +7,20 @@ import Seo from "../components/seo"
 
 const AboutPage = () => (
     <Layout>
-            <h1> This is an ABOUT Page</h1>
+            <h1 className="text-center font-semibold text-lg">My name is Calros</h1>
+
+            <StaticImage
+                src="../images/portrait.jpg"
+                width={500}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt="portrait of a man sitting"
+                style={{ marginBottom: `1.45rem` }}
+                placeholder="blurred"
+          padding={1}
+          className=""
+
+            />
     </Layout>
 
 )

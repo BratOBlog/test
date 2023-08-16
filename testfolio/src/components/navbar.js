@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -14,9 +15,7 @@ const Navbar = () => {
       <div className="max-w-full flex flex-wrap items-center justify-between m-10">
         <div className="flex items-center">
           <StaticImage src="../images/logo.png" alt="logo" className="w-8" />
-          <span className="text-xl font-semibold dark:text-white ml-2">
-            TestFolio
-          </span>
+          <p className="mx-1.5 text-blue-900  text-lg font-semibold">TestFolio</p>
         </div>
         <button
           onClick={toggleMenu}
