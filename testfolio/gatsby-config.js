@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Testfolio site`,
+    title: `ECOFriendly`,
     description: `Testing portfolio site.`,
     author: `@Brat`,
     siteUrl: `https://github.com/BratOBlog/test/tree/main/testfolio`,

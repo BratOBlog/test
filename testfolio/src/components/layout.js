@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         <div className="relative">
           <div>
             <StaticImage
-              src="../images/back.jpg"
+              src="../images/hero.jpg"
               alt="light background"
               className="w-full bg-center bg-black opacity-90"
               style={{ maxHeight: "60vh" }}
@@ -46,9 +46,9 @@ const Layout = ({ children }) => {
           </div>
 
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <h1 className="text-white text-4xl font-semibold">TESTFOLIO</h1>
+            <h1 className="text-white text-4xl font-semibold">ECOFriendly</h1>
             <h2 className="text-white text-2xl font-semibold">
-              Welcome to my test portfolio
+              Welcome to ECOFriendly!
             </h2>
           </div>
         </div>
@@ -63,6 +63,7 @@ const Layout = ({ children }) => {
           with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <h6>Image by macrovector_official on Freepik</h6>
         </footer>
       </div>
     </>
