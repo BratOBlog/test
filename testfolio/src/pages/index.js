@@ -9,9 +9,15 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-      <h1>
-        Welcome to <b>THIS IS A TESTFOLIO website</b>
+    <div className="container">
+      <h1 className="text-2xl text-center">
+        Our aim at <b>ECOFriendly</b> is to plan for a sustainable future
       </h1>
+
+    <p>
+
+    </p>
+      </div>
   </Layout>
 )
 

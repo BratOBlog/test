@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="max-w-full flex flex-wrap items-center justify-between m-10">
         <div className="flex items-center">
           <StaticImage src="../images/logo.png" alt="logo" className="w-8" />
-          <p className="mx-1.5 text-blue-900  text-lg font-semibold">TestFolio</p>
+          <p className="mx-1.5 text-green-900  text-lg font-semibold">ECOFriendly</p>
         </div>
         <button
           onClick={toggleMenu}

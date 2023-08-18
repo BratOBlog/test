@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <h1 className="text-white text-4xl font-semibold">ECOFriendly</h1>
             <h2 className="text-white text-2xl font-semibold">
-              Welcome to ECOFriendly!
+              Plan for sustainable living!
             </h2>
           </div>
         </div>
