@@ -63,7 +63,6 @@ const Layout = ({ children }) => {
           with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
-          <h6>Image by macrovector_official on Freepik</h6>
         </footer>
       </div>
     </>
