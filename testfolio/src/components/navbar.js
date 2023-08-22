@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import PortfolioDropdown from "./portfoliodropdown"
 
 
 const Navbar = () => {
@@ -10,6 +11,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const projects = [
+    {title: "Housing Complex", path: "/projects/housecomplex"}
+  ]
+
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-full flex flex-wrap items-center justify-between m-10">
@@ -17,6 +22,7 @@ const Navbar = () => {
           <StaticImage src="../images/logo.png" alt="logo" className="w-8" />
           <p className="mx-1.5 text-green-900  text-lg font-semibold">ECOFriendly</p>
         </div>
+
         <button
           onClick={toggleMenu}
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -53,8 +59,8 @@ const Navbar = () => {
             <li className="block py-2 pl-3 pr-4 text-blue-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               <Link to="/about">About</Link>
             </li>
-            <li className="block py-2 pl-3 pr-4 text-blue-900  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-              <Link to="/portfolio">Portfolio</Link>
+            <li className="relative group">
+              <PortfolioDropdown projects={projects} />
             </li>
             <li className="block py-2 pl-3 pr-4 text-blue-900  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               <Link to="/blog">Blog</Link>
