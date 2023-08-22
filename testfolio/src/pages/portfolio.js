@@ -24,6 +24,10 @@ const Portfolio = () => (
 
     <wrapper className="grid grid-cols-2 gap-4 mx-10">
       <div className="card mb-4 aos-init aos-animate  border border-gray-300 rounded p-4">
+        
+        <Link to="/projects/housecomplex"> Housing complex </Link>
+
+
         <StaticImage
           src="https://images.unsplash.com/photo-1504494645474-cc4e25299579?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
           width={300}

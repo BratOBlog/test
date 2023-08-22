@@ -27,7 +27,7 @@ const IndexPage = () => (
         </p>
 
         <h2 className="text-center text-lg font-semibold my-6">
-          On a bigger scale{" "}
+          On a larger scale{" "}
         </h2>
         <p>
           On a bigger scale we are looking at the impact of the sustainable
@@ -37,6 +37,18 @@ const IndexPage = () => (
           conditions drastically. The aim is to compensate the effects with a
           sustainable city and landscape planning.
         </p>
+
+        <div className="my-10 mx-auto w-full max-w-screen-md">
+          <div className="relative" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/fsWr0LfM_uQ?si=AB4svd8FMnoJD1FY"
+              title="YouTube video player sustainable meaning"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen="false"
+            ></iframe>
+          </div>
+        </div>
 
         <h2 className="text-center text-lg font-semibold my-6">
           On a smaller scale{" "}
@@ -52,20 +64,19 @@ const IndexPage = () => (
           recycled or locally sourced building materials are becoming more and
           more popular.
         </p>
+
+        <div className="my-10 mx-auto w-full max-w-screen-md">
+          <div className="relative" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/oIddRKVH6H0?si=6q3GQ_gdFZv8izMl"
+              title="YouTube video player sustainable homes" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen="false"
+            ></iframe>
+          </div>
+        </div>
       </div>
-
-      <iframe
-      className="flex justify-center items-center my-10 mx-auto max-w-560 max-h-315"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/fsWr0LfM_uQ?si=AB4svd8FMnoJD1FY"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      >
-
-      </iframe>
     </div>
   </Layout>
 )

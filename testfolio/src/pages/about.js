@@ -11,7 +11,7 @@ const AboutPage = () => (
       <div className="mt-8 mx-auto grid sm:grid-cols-2 gap-10">
         <div className="max-w-lg lg:max-w-800px lg:mx-10">
           <h1 className="font-semibold text-2xl my-3">
-            Hello, my name is Calros Friendly
+            Hello, my name is Carlos Friendly
           </h1>
           <p className="text-lg">
             I'm a passionate civil engineer dedicated to making a positive
