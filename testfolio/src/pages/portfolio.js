@@ -29,7 +29,7 @@ const Portfolio = () => (
 
 
         <StaticImage
-          src="https://images.unsplash.com/photo-1504494645474-cc4e25299579?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+          src="../images/complex.png"
           width={300}
           quality={65}
           formats={["auto", "webp", "avif"]}
@@ -50,7 +50,7 @@ const Portfolio = () => (
 
       <div className="card mb-4 aos-init aos-animate  border border-gray-300 rounded p-4">
         <StaticImage
-          src="https://images.unsplash.com/photo-1542800952-e5471ed41326?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          src="../images/park.png"
           width={300}
           quality={65}
           formats={["auto", "webp", "avif"]}
@@ -71,7 +71,7 @@ const Portfolio = () => (
 
       <div className="card mb-4 aos-init aos-animate  border border-gray-300 rounded p-4">
         <StaticImage
-          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          src="../images/workshop.png"
           width={300}
           quality={65}
           formats={["auto", "webp", "avif"]}
@@ -93,7 +93,7 @@ const Portfolio = () => (
 
       <div className="card mb-4 aos-init aos-animate  border border-gray-300 rounded p-4">
         <StaticImage
-          src="https://images.unsplash.com/photo-1642840095012-6a8bd2a88457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+          src="../images/solar.png"
           width={300}
           quality={65}
           formats={["auto", "webp", "avif"]}
@@ -113,7 +113,7 @@ const Portfolio = () => (
 
       <div className="card mb-4 aos-init aos-animate  border border-gray-300 rounded p-4">
         <StaticImage
-          src="https://images.unsplash.com/photo-1527891751199-7225231a68dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+src="../images/campus.png"
           width={300}
           quality={65}
           formats={["auto", "webp", "avif"]}
@@ -134,7 +134,7 @@ const Portfolio = () => (
 
       <div className="card mb-4 aos-init aos-animate  border border-gray-300 rounded p-4">
         <StaticImage
-src="https://images.unsplash.com/photo-1572546946887-67f2289e1c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+src="../images/apartment.png"
 width={300}
           quality={65}
           formats={["auto", "webp", "avif"]}

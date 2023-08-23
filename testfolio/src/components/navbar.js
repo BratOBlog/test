@@ -12,7 +12,12 @@ const Navbar = () => {
   }
 
   const projects = [
-    {title: "Housing Complex", path: "/projects/housecomplex"}
+    {title: "Housing Complex", path: "/projects/housecomplex"},
+    {title: "Urban Park", path: "/projects/urbanpark"},
+    {title: "Community Center", path: "/projects/communitycenter"},
+    {title: "School Campus", path: "/projects/campus"},
+    {title: "Residential Retrofit", path: "/projects/residential"},
+    {title: "ECO Workshop", path: "/projects/workshop"}
   ]
 
   return (
