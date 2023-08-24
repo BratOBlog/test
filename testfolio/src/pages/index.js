@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -12,7 +11,7 @@ const IndexPage = () => (
         Our aim at <b>ECOFriendly</b> is to plan for a sustainable future
       </h1>
 
-      <div className="text-justify mx-10 bg-zinc-100">
+      <div>
         <h2 className="text-center text-lg font-semibold my-6">
           What does the sustainable concept mean?
         </h2>

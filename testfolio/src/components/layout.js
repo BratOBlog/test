@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header  />
       <div
         style={{
           margin: `0 auto`,
@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <div>
-        <main>
+        <main className="text-justify mx-10 bg-zinc-100 px-10">
           {children}
         </main>
         <footer className="max-w-full flex justify-between items-center m-10 p-4">

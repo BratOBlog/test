@@ -28,8 +28,8 @@ const PortfolioDropdown = ({ projects }) => {
       </Link>
       <div
         className={`${
-          show ? "block" : "hidden"
-        } absolute mt-2 w-48 bg-white border border-gray-100 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 transition-opacity duration-300`}
+          show ? "transition-opacity duration-300 ease-in opacity-100 h-auto" : "opacity-0 h-0"
+        } transition-opacity duration-400 ease-out transition-height absolute mt-2 w-48 bg-white border border-gray-100 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

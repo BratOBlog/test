@@ -12,9 +12,6 @@ const Navbar = () => {
   }
 
   const projects = [
-    {title: "Housing Complex", path: "/projects/housecomplex"},
-    {title: "Urban Park", path: "/projects/urbanpark"},
-    {title: "Community Center", path: "/projects/communitycenter"},
     {title: "School Campus", path: "/projects/campus"},
     {title: "Residential Retrofit", path: "/projects/residential"},
     {title: "ECO Workshop", path: "/projects/workshop"}
@@ -25,7 +22,7 @@ const Navbar = () => {
       <div className="max-w-full flex flex-wrap items-center justify-between m-10">
         <div className="flex items-center">
           <StaticImage src="../images/logo.png" alt="logo" className="w-8" />
-          <p className="mx-1.5 text-green-900  text-lg font-semibold">ECOFriendly</p>
+          <p className="mx-1.5 text-green-900  text-lg font-semibold">ECOFriendly</p> 
         </div>
 
         <button

@@ -1,25 +1,22 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 const imageList = [
   "https://images.unsplash.com/photo-1572546946887-67f2289e1c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
   "https://images.unsplash.com/photo-1527891751199-7225231a68dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-  "https://images.unsplash.com/photo-1642840095012-6a8bd2a88457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
   "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-  "https://images.unsplash.com/photo-1542800952-e5471ed41326?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
- "https://images.unsplash.com/photo-1504494645474-cc4e25299579?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-];
+]
 
 export default function Carousel() {
-  const [currentImage, setCurrentImage] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0)
 
   function handleNextClick() {
-    setCurrentImage((prevImage) => (prevImage + 1) % imageList.length);
+    setCurrentImage(prevImage => (prevImage + 1) % imageList.length)
   }
 
   function handlePrevClick() {
     setCurrentImage(
-      (prevImage) => (prevImage - 1 + imageList.length) % imageList.length
-    );
+      prevImage => (prevImage - 1 + imageList.length) % imageList.length
+    )
   }
 
   return (
@@ -31,21 +28,12 @@ export default function Carousel() {
         Previous
       </button>
 
-    
       <div className="flex justify-center mt-4">
-        {imageList.map((image, index) => (
-          <div
-            key={index}
-            className={`max-h-500px max-w-500px p-2 ${
-              currentImage === index ? "" : "hidden"
-            }`}
-          >
-            <img
-              src={image}
-              alt={`Image ${index + 1}`}
-            />
-          </div>
-        ))}
+        <img
+          src={imageList[currentImage]}
+          alt={`Image ${currentImage + 1}`}
+          className="max-h-500px max-w-500px p-2"
+        />
       </div>
 
       <button
@@ -55,5 +43,5 @@ export default function Carousel() {
         Next
       </button>
     </div>
-  );
+  )
 }
