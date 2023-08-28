@@ -22,7 +22,7 @@ const Portfolio = () => (
 
     <wrapper className="grid grid-cols-2 gap-4 mx-10">
       
-      <div className="card mb-4 aos-init aos-animate  border border-gray-300 rounded p-4">
+      <div className="border border-gray-300 rounded p-4">
         <StaticImage
           src="../images/workshop.png"
           width={300}
@@ -45,7 +45,7 @@ const Portfolio = () => (
       </div>
 
 
-      <div className="card mb-4 aos-init aos-animate  border border-gray-300 rounded p-4">
+      <div className="border border-gray-300 rounded p-4">
         <StaticImage
 src="../images/campus.png"
           width={300}
@@ -66,7 +66,7 @@ src="../images/campus.png"
         </p>
       </div>
 
-      <div className="card mb-4 aos-init aos-animate  border border-gray-300 rounded p-4">
+      <div className="border border-gray-300 rounded p-4">
         <StaticImage
 src="../images/apartment.png"
 width={300}
