@@ -1,5 +1,5 @@
 ---
-title: "solar energy"
+title: "Solar energy"
 date: "2023-08-27"
 slug: "solar-energy"
 ---

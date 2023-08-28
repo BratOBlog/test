@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -10,42 +10,43 @@ const Blog = ({ data }) => {
       <p className="mt-4 font-semibold text-blue-400">This is a test.</p>
 
       <ul className="my-10">
-        {data.allFile.nodes.map(node => (
+        {data.allMarkdownRemark.nodes.map(node => (
           <li className="my-10" key={node.id}>
             <hr />
-            {node.childrenMarkdownRemark.map(child => (
-              <ul className="my-10" key={child.frontmatter.slug}>
-                <li>{child.frontmatter.title}
-                {child.frontmatter.date}
-                {child.excerpt}</li>
-              </ul>
-            ))}
+            <ul className="my-10" key={node.frontmatter.slug}>
+              <li>
+                <h1 className="my-10 text-2xl font-semibold">
+                  {node.frontmatter.title}
+                </h1>
+                <p>{node.frontmatter.date}</p>
+                <p>{node.excerpt}</p>
+                <Link to={`/blog/${node.frontmatter.slug}`}>
+                  <button className="my-10 p-3 text-blue-800 font-semibold border-gray-800 rounded-md bg-blue-300">
+                    Read more
+                  </button>
+                </Link>
+              </li>
+            </ul>
           </li>
         ))}
       </ul>
-
     </Layout>
   )
 }
 
 export const query = graphql`
-    query {
-      allFile(filter: { sourceInstanceName: { eq: "blog" } }) {
-        nodes {
-          name
-          relativePath
-          id
-          childrenMarkdownRemark {
-            frontmatter {
-              slug
-              title
-              date
-            }
-            excerpt(pruneLength: 150)
-          }
+  query {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          slug
+          title
+          date
         }
+        excerpt(pruneLength: 150)
       }
     }
+  }
 `;
 
 export const Head = () => <Seo title="Blog" />

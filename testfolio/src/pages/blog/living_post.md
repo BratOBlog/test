@@ -1,7 +1,7 @@
 ---
-title: "testpost"
+title: "Living Post"
 date: "2023-08-24"
-slug: "testpost"
+slug: "living-post"
 ---
 
 # Embracing Sustainable Living: A Pathway to a Greener Future
