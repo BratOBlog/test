@@ -71,7 +71,7 @@ const IndexPage = () => (
               src="https://www.youtube.com/embed/oIddRKVH6H0?si=6q3GQ_gdFZv8izMl"
               title="YouTube video player sustainable homes" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen="false"
+              allowFullscreen="false"
             ></iframe>
           </div>
         </div>

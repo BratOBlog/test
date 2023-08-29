@@ -38,10 +38,11 @@ export const query = graphql`
   query {
     allMarkdownRemark {
       nodes {
+        id
         frontmatter {
           slug
           title
-          date
+          date(formatString: "YYYY-MM-DD")
         }
         excerpt(pruneLength: 150)
       }
