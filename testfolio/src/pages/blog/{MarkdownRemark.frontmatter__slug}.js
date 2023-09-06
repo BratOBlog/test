@@ -2,34 +2,30 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 
-const BlogPostTemplate = ({ data }) => {
-  console.log(data);
+const BlogPostTemplate = ({ data: { markdownRemark } }) => {
+const {frontmatter, html} = markdownRemark;
+
   return (
     <Layout>
-      {data.allMarkdownRemark.nodes.map(node => (
-        <div className="prose" key={node.frontmatter.slug}>
-          <h1>{node.frontmatter.title}</h1>
-          <p>{node.frontmatter.date}</p>
-          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+        <div className="prose" key={frontmatter.slug}>
+          <h1>{frontmatter.title}</h1>
+          <p>{frontmatter.date}</p>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
-      ))}
     </Layout>
   );
 };
 
 export const query = graphql`
-  query {
-    allMarkdownRemark {
-      nodes {
-        frontmatter {
-          title
-          date(formatString: "YYYY-MM-DD")
-          slug
-        }
-        html
-      }
+query ($id: String!) {
+  markdownRemark(id: { eq: $id }) {
+    frontmatter {
+      date(formatString: "MMMM DD, YYYY")
+      title
     }
+    html
   }
+}
 `;
 
 export default BlogPostTemplate

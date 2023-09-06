@@ -9,13 +9,13 @@ const Blog = ({ data }) => {
       <h1 className="text-3xl font-bold">Welcome to my blog!</h1>
       <p className="mt-4 font-semibold text-blue-400">This is a test.</p>
 
-      <ul className="my-10">
+      <ul className="my-10 ">
+      
         {data.allMarkdownRemark.nodes.map(node => (
-          <li className="my-10" key={node.id}>
-            <hr />
-            <ul className="my-10" key={node.frontmatter.slug}>
+          <li className="my-10 rounded border-gray-600 shadow-lg overflow-hidden text-center" key={node.id}>
+            <ul key={node.frontmatter.slug}>
               <li>
-                <h1 className="my-10 text-2xl font-semibold">
+                <h1 className="text-2xl font-semibold">
                   {node.frontmatter.title}
                 </h1>
                 <p>{node.frontmatter.date}</p>
